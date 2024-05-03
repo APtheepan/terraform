@@ -1,0 +1,10 @@
+Q is there any way to attach a azure storage container to a azure vm?
+
+In Azure, you cannot directly attach an Azure Storage container to an Azure Virtual Machine (VM)
+in the same way you would attach a disk or a network share. Azure Storage containers are meant 
+for storing unstructured data such as blobs, files, or tables and are accessed via REST APIs over HTTP or HTTPS.
+
+However, you can access the data stored in an Azure Storage container from within a VM by 
+mounting the container as a file share using Azure Files. Azure Files provides SMB (Server Message Block) 
+file shares that can be accessed from Windows, Linux, and macOS systems. This allows you to access files stored 
+in Azure Storage as if they were stored on a network drive.

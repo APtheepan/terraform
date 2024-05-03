@@ -1,0 +1,3 @@
+*/.terraform/providers/*
+*.lock.hcl
+/home/theepan/terrform/terr_remotestate/terraform.tfstate.backup
