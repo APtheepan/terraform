@@ -33,7 +33,7 @@ resource "azurerm_lb_backend_address_pool" "cross-region-lb-pool" {
 
 resource "azurerm_lb_backend_address_pool_address" "cross-region-lb-pool-address" {
   for_each                            = var.regions
-  name                                = "cross-region-lb-pool-address"
+  name                                = "cross-region-lb-${each.value.location}"
   backend_address_pool_id             = azurerm_lb_backend_address_pool.cross-region-lb-pool.id
   backend_address_ip_configuration_id = azurerm_lb.region_lb[each.key].frontend_ip_configuration[0].id
 }
