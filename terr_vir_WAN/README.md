@@ -2,6 +2,9 @@ This is a Terraform based demonstration of Azure Virtual WAN. The environment is
 foundation that you can add additional services (Gateways, Firewalls, etc.) into, allowing the demonstration of concepts 
 and technologies. This lab has two options - with or without Azure Firewall, and is based on a two-region design.
 
+![Virtual-WAN](https://github.com/APtheepan/terraform/assets/77774872/27a48053-53a3-49a7-99db-d108f6592e2a)
+
+
 What does this Lab Deploy?
 This lab deploys the following Resources:
 
